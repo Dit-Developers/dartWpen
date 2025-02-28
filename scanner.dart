@@ -3,6 +3,14 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 
 void main() async {
+  print("""
+       __           __ _       __               
+  ____/ /___ ______/ /| |     / /___  ___  ____ 
+ / __  / __ `/ ___/ __/ | /| / / __ \/ _ \/ __ \
+/ /_/ / /_/ / /  / /_ | |/ |/ / /_/ /  __/ / / /
+\__,_/\__,_/_/   \__/ |__/|__/ .___/\___/_/ /_/
+                        https://msusuport.vercel.app/
+  """);
   print("Enter target URL (e.g., http://example.com): ");
   String? target = stdin.readLineSync()?.trim();
   if (target == null || target.isEmpty) {
